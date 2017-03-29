@@ -1,0 +1,51 @@
+#layout {
+  width: 1280px;
+  height: 720px;
+  background: #1a1f24;
+  color: #dedede;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.panel {
+
+  
+  position: absolute;
+  overflow: hidden;
+  box-shadow:   0 0 7px #fff;
+}
+
+#camera {
+  width: 250px;
+  height: 140px;
+  right: 10px;
+  top: 10px;
+}
+
+#banners {
+  right: 10px;
+  top: 160px;
+  width: 250px;
+  height: 150px;
+}
+
+#chat {
+  width: 250px;
+  height: 390px;
+  right: 10px;
+  bottom: 10px;
+}
+
+#display {
+  top: 10px;
+  left: 10px;
+  width: 1000px;
+  height: 700px;
+}
+
+/*
+1280-30-250-2
+720-15-140-17-250-15-2
+*/
