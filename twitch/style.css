@@ -1,9 +1,9 @@
 #layout {
   width: 1280px;
   height: 720px;
-  background: #1a1f24;
+  background: url(img/bg-darkgreen.jpg) no-repeat;
   color: #dedede;
-  
+
   position: absolute;
   top: 0;
   left: 0;
@@ -11,10 +11,10 @@
 
 .panel {
 
-  
+
   position: absolute;
   overflow: hidden;
-  box-shadow:   0 0 6px #12793d;
+  box-shadow:   0 0 9px #fff;
 }
 
 #camera {
@@ -33,16 +33,23 @@
 
 #chat {
   width: 250px;
-  height: 390px;
+  height: 340px;
   right: 10px;
-  bottom: 10px;
+  bottom: 60px;
 }
 
 #display {
   top: 10px;
   left: 10px;
   width: 1000px;
-  height: 700px;
+  height: 650px;
+}
+
+#footer {
+  bottom: 10px;
+  left: 10px;
+  width: 1260px;
+  height: 40px;
 }
 
 /*
