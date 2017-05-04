@@ -18,22 +18,22 @@
 }
 
 #camera {
-  width: 250px;
-  height: 140px;
+  width: 350px;
+  height: 200px;
   right: 10px;
   top: 10px;
 }
 
 #banners {
   right: 10px;
-  top: 160px;
-  width: 250px;
+  top: 220px;
+  width: 350px;
   height: 150px;
 }
 
 #chat {
-  width: 250px;
-  height: 340px;
+  width: 350px;
+  height: 280px;
   right: 10px;
   bottom: 60px;
 }
@@ -41,7 +41,7 @@
 #display {
   top: 10px;
   left: 10px;
-  width: 1000px;
+  width: 900px;
   height: 650px;
 }
 
