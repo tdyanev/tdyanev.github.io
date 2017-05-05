@@ -22,55 +22,22 @@
   <body>
   <div id="layout">
     <div id="display" class="panel">
+      display 900x650
     </div>
 
     <div id="camera" class="panel">
-
+  camera 350x200
     </div>
     <div id="banners" class="panel">
+  banners 350x150
     </div>
     <div id="chat" class="panel">
+  chat 350x280
     </div>
 
     <div id="footer" class="panel">
-      <div id="social">
-        <img src="img/icons/Facebook-Icon.png" /> facebook
-        <img src="img/icons/Twitter-Icon.png" /> twitter
-      </div>
-      <div id="clock"><span class="txt">На живо от: <span id="time"></span></span></div>
+      footer 1260x40
     </div>
 </div>
-
-  <script type="text/javascript">
-    window.onload = function() {
-      var box = document.getElementById('time');
-      var time = 0;
-
-      function tick() {
-        box.innerHTML = formatTime(++time);
-      }
-
-      function formatTime(n) {
-        var h = Math.floor(n / 3600);
-        var m = Math.floor(n % 3600 / 60);
-        var s = Math.floor(n % 3600 % 60);
-
-
-        return addZero(h) + ':' + addZero(m) + ':' + addZero(s);
-      }
-
-
-      function addZero(n) {
-        return n < 10 ? '0' + n : n;
-      }
-
-      function runClock() {
-        tick();
-        setInterval(tick, 1000);
-      }
-
-      runClock();
-    }
-  </script>
   </body>
 </html>
