@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Twitch sample template</title>
+
+    <!-- Bootstrap -->
+
+
+
+    <link href="style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div id="layout">
+    <div id="display" class="panel">
+      <img src="img/display.png" height="650" />
+    </div>
+
+    <div id="camera" class="panel">
+<img src="https://i0.wp.com/www.ilgiornaledelpoker.com/wp-content/uploads/2015/05/Viktor_Bloom.jpg?fit=650%2C350&resize=350%2C200" />
+
+    </div>
+    <div id="banners" class="panel">
+<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/panel-149318409-image-f89c80bcbff1a506-320-320.jpeg" height="150" width="350" />
+    </div>
+    <div id="chat" class="panel">
+  <img src="img/chat.png" width="350" />
+    </div>
+
+    <div id="footer" class="panel">
+      <div id="social">
+        <span class="media">
+          <img src="img/icons/Facebook-Icon.png" /> facebook
+        </span>
+        <span class="media">
+        <img src="img/icons/Twitter-Icon.png" /> twitter
+        </span>
+      </div>
+      <div id="clock"><span class="txt">На живо от: <span id="time"></span></span></div>
+    </div>
+</div>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      var box = document.getElementById('time');
+      var time = 0;
+
+      function tick() {
+        box.innerHTML = formatTime(++time);
+      }
+
+      function formatTime(n) {
+        var h = Math.floor(n / 3600);
+        var m = Math.floor(n % 3600 / 60);
+        var s = Math.floor(n % 3600 % 60);
+
+
+        return addZero(h) + ':' + addZero(m) + ':' + addZero(s);
+      }
+
+
+      function addZero(n) {
+        return n < 10 ? '0' + n : n;
+      }
+
+      function runClock() {
+        tick();
+        setInterval(tick, 1000);
+      }
+
+      runClock();
+    }
+  </script>
+  </body>
+</html>

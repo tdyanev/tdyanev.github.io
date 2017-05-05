@@ -3,15 +3,16 @@
   height: 720px;
   background: url(img/bg-darkgreen.jpg) no-repeat;
   color: #dedede;
-
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: .08em;
+  font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .panel {
-
-
   position: absolute;
   overflow: hidden;
   box-shadow:   0 0 9px #fff;
@@ -50,8 +51,31 @@
   left: 10px;
   width: 1260px;
   height: 40px;
+  background: #093F0F;
+  text-shadow: 2px 2px 0 #59320D;
+  font-weight: bold;
 }
 
+#social, #clock {
+  position: absolute;
+  height: 40px;
+  display:flex;
+  align-items:center;
+}
+
+#clock {
+  left: 910px;
+  width: 350px;
+}
+
+#social img {
+  vertical-align: middle;
+  margin: 0 3px;
+}
+
+.media {
+  margin-right: 10px;
+}
 /*
 1280-30-250-2
 720-15-140-17-250-15-2
