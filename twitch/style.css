@@ -77,6 +77,16 @@
 #social img:first-of-type {
   margin-left: 5px;
 }
+
+.icon {
+  background: url(img/social.png);
+  width: 32px;
+  height: 32px;
+}
+
+#fb {
+  background-position: 0px 0px;
+}
 /*
 1280-30-250-2
 720-15-140-17-250-15-2
